@@ -28,6 +28,10 @@ export const metadata: Metadata = {
   title: { default: `${site.name} | ${site.tagline}`, template: `%s | ${site.name}` },
   description: site.description,
   applicationName: site.name,
+  icons: {
+    icon: "/brand/icon-192.png",
+    apple: "/brand/icon-192.png",
+  },
   alternates: {
     canonical: "/",
     types: { "application/rss+xml": absoluteUrl("/blog/feed.xml") },
@@ -36,13 +40,28 @@ export const metadata: Metadata = {
     type: "website",
     url: site.url,
     siteName: site.name,
-    title: site.name,
+    title: `${site.name} | ${site.tagline}`,
     description: site.description,
     locale: "en_IN",
     images: [{ url: absoluteUrl("/brand/og-image.png"), width: 1200, height: 630, alt: "Welkdock Technologies logo" }],
   },
-  twitter: { card: "summary_large_image" },
-  robots: { index: true, follow: true },
+  twitter: {
+    card: "summary_large_image",
+    title: `${site.name} | ${site.tagline}`,
+    description: site.description,
+    images: [absoluteUrl("/brand/og-image.png")],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+      "max-video-preview": -1,
+    },
+  },
   formatDetection: { telephone: false, email: false, address: false },
 };
 
