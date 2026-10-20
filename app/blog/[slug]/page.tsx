@@ -24,6 +24,7 @@ export async function generateMetadata({ params }: { params: Promise<Params> }) 
     title: post.title,
     description: post.description,
     path: `/blog/${post.slug}/`,
+    ...(post.image ? { image: { ...post.image, width: 1400, height: 934 } } : {}),
     type: "article",
     publishedTime: post.date,
   });

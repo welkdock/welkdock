@@ -8,6 +8,7 @@ export const site = {
   description:
     "Welkdock is an independent software company building focused tools for specific jobs, from developer packages and mobile apps to security and hiring software.",
   updated: "16 October 2026",
+  updatedAt: "2026-10-16",
 } as const;
 
 export const nav = [
