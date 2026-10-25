@@ -1,3 +1,6 @@
+import welkuiArtwork from "@/assets/images/welkui.png";
+import welkuiFlutterArtwork from "@/assets/images/welkui-flutter.png";
+
 export type AreaId = "packages" | "security" | "apps" | "hiring";
 
 export type Area = {
@@ -23,10 +26,10 @@ export type Product = {
 export const areas: Area[] = [
   {
     id: "packages",
-    title: "Developer packages",
+    title: "Developer packages and UI libraries",
     short: "Packages",
     audience: "For developers",
-    lead: "A Flutter widget package and a JavaScript package, each published on its respective registry.",
+    lead: "Our own open-source WelkUI component libraries for React and Flutter, alongside focused Flutter and JavaScript packages.",
   },
   {
     id: "security",
@@ -52,6 +55,45 @@ export const areas: Area[] = [
 ];
 
 export const products: Product[] = [
+  {
+    slug: "welkui-react",
+    name: "WelkUI React",
+    kind: "React component library",
+    area: "packages",
+    builtFor: "React developers",
+    summary:
+      "Our open-source frontend component library for React. Comic-inspired components with bold outlines, playful colors, typed props, live examples, and copy-ready documentation.",
+    availability: "Live documentation and open source",
+    image: {
+      src: welkuiArtwork.src,
+      alt: "WelkUI React component library artwork",
+      width: welkuiArtwork.width,
+      height: welkuiArtwork.height,
+      label: "Product artwork",
+    },
+    links: [{ label: "Explore WelkUI React", url: "https://ui.welkdock.com/" }],
+  },
+  {
+    slug: "welkui-flutter",
+    name: "WelkUI Flutter",
+    kind: "Flutter UI library",
+    area: "packages",
+    builtFor: "Flutter developers",
+    summary:
+      "Our open-source UI widget library for Flutter. Bring comic-inspired styling to Android and iOS apps with idiomatic Dart widgets, live mobile previews, and copy-ready examples.",
+    availability: "Live documentation and package on pub.dev",
+    image: {
+      src: welkuiFlutterArtwork.src,
+      alt: "WelkUI Flutter UI library artwork",
+      width: welkuiFlutterArtwork.width,
+      height: welkuiFlutterArtwork.height,
+      label: "Product artwork",
+    },
+    links: [
+      { label: "Explore WelkUI Flutter", url: "https://ui.welkdock.com/flutter/" },
+      { label: "View package on pub.dev", url: "https://pub.dev/packages/welkui_flutter" },
+    ],
+  },
   {
     slug: "advancelist-view",
     name: "AdvanceListView",

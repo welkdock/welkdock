@@ -6,7 +6,7 @@ export const site = {
   email: "contact@welkdock.com",
   tagline: "Small software. Specific jobs.",
   description:
-    "Welkdock is an independent software company building focused tools for specific jobs, from developer packages and mobile apps to security and hiring software.",
+    "Welkdock is an independent software company building React and Flutter UI libraries, developer packages, mobile apps, security tools and hiring software.",
   updated: "16 October 2026",
   updatedAt: "2026-10-16",
 } as const;

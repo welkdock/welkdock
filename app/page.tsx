@@ -21,11 +21,12 @@ export const metadata = pageMetadata({
 
 const featuredSlugs = [
   "stockwise",
- 
+  "welkui-react",
+  "welkui-flutter",
   "advancelist-view",
   "ncryptor",
   "sbf-india",
-   "scalerhire",
+  "scalerhire",
   "cyberprobe",
 ];
 const steps = [
