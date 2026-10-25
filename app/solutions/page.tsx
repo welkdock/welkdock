@@ -39,7 +39,7 @@ function ProductLinkIcon({ href }: { href: string }) {
 export const metadata = pageMetadata({
   title: "Products",
   description:
-    "Explore Welkdock's independent projects: developer packages, security testing tools, mobile applications and hiring software. Public availability is stated for each product.",
+    "Explore Welkdock's independent projects: React and Flutter UI libraries, developer packages, security testing tools, mobile applications and hiring software.",
   path: "/solutions/",
 });
 
